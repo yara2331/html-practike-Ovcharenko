@@ -1,0 +1,74 @@
+/* 1. Изменение фонового изображения */
+body {
+    background: url('les3.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Изменение блока div (поле меню для кнопок) */
+#menu-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+#menu-container h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* 3. Изменение кнопок button по их классу */
+.my-button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);  
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+/* 4. Выравнивание кнопок (форм) по блоку div */
+#form1 {
+    position: relative;
+    top: 10px;
+}
+
+#form2 {
+    position: relative;
+    top: 25px;
+}
+
+#form3 {
+    position: relative;
+    top: 40px;
+}
+
+/* 5. Редактирование текста внутри кнопок */
+.button-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* 6. Анимация при наведении курсора на кнопку */
+.my-button:hover {
+    background-color: #ff9800; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9); 
+}
+
+.my-button:hover .button-text {
+    color: white; 
+}

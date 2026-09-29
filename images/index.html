@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практические работы по HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #f7971e, #ffd200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            display: block;
+            padding: 18px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-1 {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .btn-2 {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+        }
+
+        .btn-3 {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .btn span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 400;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Практические работы по HTML</h1>
+        <p class="subtitle">ИСИП 24.9.2 — Проектирование и разработка интерфейсов</p>
+
+        <div class="buttons">
+            <a href="practice-1.html" class="btn btn-1">
+                Практическая работа №1
+                <span>Основы HTML-разметки</span>
+            </a>
+
+            <a href="practice-2.html" class="btn btn-2">
+                Практическая работа №2
+                <span>Таблицы и формы</span>
+            </a>
+
+            <a href="practice-3.html" class="btn btn-3">
+                Практическая работа №3
+                <span>Медиа и стилизация</span>
+            </a>
+        </div>
+
+        <footer>
+            © 2026 — Ваша Фамилия | GitHub Pages
+        </footer>
+    </div>
+</body>
+</html>
